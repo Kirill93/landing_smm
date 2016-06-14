@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+header {
+    min-height: 47px;
+    background: #a71c18;
+}
+
+.menu {
+    height: 47px;
+    padding: 0;
+    margin: 0;
+    line-height: 47px;
+}
+
+.menu li {
+    display: inline;
+    padding-left: 57px;
+}
+
+.menu li:first-child {padding: 0;}
+
+.menu li a {
+    font-family: "HelveticaRegular";
+    color: #fff;
+    text-decoration: none;
+}
