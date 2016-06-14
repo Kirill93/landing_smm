@@ -8,6 +8,16 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "HelveticaLight";
+    src: url("../fonts/HelveticaLight.eot");
+    src: url("../fonts/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaLight.woff") format("woff"),
+    url("../fonts/HelveticaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 header {
     min-height: 47px;
     background: #a71c18;
@@ -31,4 +41,13 @@ header {
     font-family: "HelveticaRegular";
     color: #fff;
     text-decoration: none;
+}
+
+.phone {
+    background: url('../img/phone.png') no-repeat;
+    height: 30px;
+    font-family: "HelveticaLight";
+    color: #fff;
+    line-height: 30px;
+    padding-left: 38px;
 }
