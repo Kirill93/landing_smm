@@ -49,6 +49,8 @@ header {
 
 .no-padding {padding: 0;}
 
+.small-bold {font-size: 13px;}
+
 .menu {
     height: 47px;
     padding: 0;
@@ -199,4 +201,67 @@ header {
     font-family: "HelveticaBold";
     list-style-image: url('../img/list-icon.png');
     padding: 0;
+}
+
+.section-many-blocks {
+    background: url('../img/bg_bg.jpg') no-repeat;
+    width: 100%;
+    height: 2491px;
+}
+
+.block-packs {margin-top: 57px;}
+
+.block-content-packs {
+    width: 100%;
+    padding: 36px 35px;
+    border: 2px solid #bebfc1;
+    border-radius: 10px;
+    background: #f8f8f8;
+    margin-bottom: 15px;
+}
+
+.name-packs {
+    font-family: "HelveticaBold";
+    color: #000;
+    font-size: 34px;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+.price-packs {
+    color: #cd0d1e;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1em;
+    font-size: 19px;
+    font-family: "HelveticaBold";
+}
+
+.about-packs {
+    text-align: center;
+    margin-top: 78px;
+}
+
+.about-packs a {
+    color: #cd0d1e;
+    font-family: "HelveticaBold";
+    font-size: 13px;
+    text-decoration: underline;
+    line-height: 1.1em;
+    outline: none;
+}
+
+.green-button {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.block-we {
+    font-size: 52px;
+    color: #cd0d1e;
+    text-align: center;
+    font-family: "HelveticaBold";
+    line-height: 1.1em;
+    margin-top: 65px;
 }
