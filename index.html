@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -27,18 +31,16 @@
       </div>
     </div>
   </header>
-  <div class="clearfix"></div>
   <div class="red-line"></div>
-  <div class="clearfix"></div>
   <section data-role="section" class="section-head">
       <div class="container">
           <div class="row">
               <div class="col-md-12">
                   <div class="big-button">
-                      <a href="#"><img src="img/red_big_button.png" alt=""></a>
+                      <a data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/red_big_button.png" alt=""></a>
                   </div>
               </div>
-              <div class="col-md-12">
+              <div class="col-md-12 align-center">
                   <div class="logo">
                       <img src="img/logo.png" alt="">
                   </div>
@@ -59,9 +61,7 @@
           </div>
       </div>
   </section>
-  <div class="clearfix"></div>
   <div class="header-title">За что вы платите</div>
-  <div class="clearfix"></div>
   <section data-role="section" class="section-list">
       <div class="container-fluid">
           <div class="row">
@@ -86,9 +86,7 @@
           </div>
       </div>
   </section>
-  <div class="clearfix"></div>
   <div class="header-title">пакеты продвижения</div>
-  <div class="clearfix"></div>
   <section data-role="section" class="section-many-blocks">
       <div class="block-packs">
           <div class="container">
@@ -98,7 +96,7 @@
                           <div class="name-packs">MINI</div>
                           <div class="price-packs">7000 РУБ./МЕС.</div>
                           <div class="about-packs"><a href="#">ПОДРОБНЕЕ</a></div>
-                          <a href="#" class="green-button"><img src="img/green_button.png" alt=""></a>
+                          <a href="#" class="green-button" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/green_button.png" alt=""></a>
                       </div>
                   </div>
                   <div class="col-md-3">
@@ -106,7 +104,7 @@
                           <div class="name-packs">MEDIUM</div>
                           <div class="price-packs"><span class="small-bold">от</span> 10000 <span class="small-bold">руб./мес.</span></div>
                           <div class="about-packs"><a href="#">ПОДРОБНЕЕ</a></div>
-                          <a href="#" class="green-button"><img src="img/green_button.png" alt=""></a>
+                          <a href="#" class="green-button" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/green_button.png" alt=""></a>
                       </div>
                   </div>
                   <div class="col-md-3">
@@ -114,7 +112,7 @@
                           <div class="name-packs">MAX</div>
                           <div class="price-packs"><span class="small-bold">от</span> 10000 <span class="small-bold">руб./мес.</span></div>
                           <div class="about-packs"><a href="#">ПОДРОБНЕЕ</a></div>
-                          <a href="#" class="green-button"><img src="img/green_button.png" alt=""></a>
+                          <a href="#" class="green-button" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/green_button.png" alt=""></a>
                       </div>
                   </div>
                   <div class="col-md-3">
@@ -122,13 +120,263 @@
                           <div class="name-packs">PROF</div>
                           <div class="price-packs">ИНДИВИДУЛАЛЬНО</div>
                           <div class="about-packs"><a href="#">ПОДРОБНЕЕ</a></div>
-                          <a href="#" class="green-button"><img src="img/green_button.png" alt=""></a>
+                          <a href="#" class="green-button" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/green_button.png" alt=""></a>
                       </div>
                   </div>
               </div>
           </div>
       </div>
-      <div class="block-we">ПОЧЕМУ МЫ?</div>
+      <div class="block-we">ПОЧЕМУ МЫ</div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="block-items-we">
+                      <div class="block-icon-we"><img src="img/icon1.png" alt=""></div>
+                      <div class="block-text-we">
+                          <div class="name-we">Аудит вашего ресурса</div>
+                          <div class="text-we">Успех продвижения любой группы это её уникальность<br/> Мы это понимаем, как никто другой и предлагаем нашим<br/> клиентам только индивидуальный подход в ведении и<br/> продвижении группы в социальных сетях.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="block-items-we">
+                      <div class="block-text-we">
+                          <div class="name-we align-right">План продвижения</div>
+                          <div class="text-we align-right">Успех продвижения любой группы это её уникальность<br/> Мы это понимаем, как никто другой и предлагаем нашим<br/> клиентам только индивидуальный подход в ведении и<br/> продвижении группы в социальных сетях.</div>
+                      </div>
+                      <div class="block-icon-we"><img src="img/icon2.png" alt=""></div>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="block-items-we">
+                      <div class="block-icon-we"><img src="img/icon3.png" alt=""></div>
+                      <div class="block-text-we">
+                          <div class="name-we">Реализация</div>
+                          <div class="text-we">Успех продвижения любой группы это её уникальность<br/> Мы это понимаем, как никто другой и предлагаем нашим<br/> клиентам только индивидуальный подход в ведении и<br/> продвижении группы в социальных сетях.</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="block-items-we">
+                      <div class="block-text-we">
+                          <div class="name-we align-right">Новые клиенты</div>
+                          <div class="text-we align-right">Успех продвижения любой группы это её уникальность<br/> Мы это понимаем, как никто другой и предлагаем нашим<br/> клиентам только индивидуальный подход в ведении и<br/> продвижении группы в социальных сетях.</div>
+                      </div>
+                      <div class="block-icon-we"><img src="img/icon4.png" alt=""></div>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-md-12">
+                  <div class="block-aud">
+                      <a href="#" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/red_big_button1.png" alt=""></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="red-line"></div>
+      <div class="block-our-clients">НАШИ КЛИЕНТЫ</div>
+      <div class="red-line"></div>
+      <div class="block-parth">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="img/parth1.png" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <img src="img/parth2.png" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <img src="img/parth3.png" alt="">
+                  </div>
+
+                  <div class="col-md-4">
+                      <img src="img/parth4.png" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <img src="img/parth5.png" alt="">
+                  </div>
+                  <div class="col-md-4">
+                      <img src="img/parth6.png" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
   </section>
+  <section data-role="section" class="section-favorite">
+    <div class="white-line"></div>
+    <div class="block-we">ПОЧЕМУ МЫ?</div>
+    <div class="block-list-we">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6 col-md-offset-3">
+                   <ul class="we-list">
+                        <li>индивидуальный подход</li>
+                        <li>большой опыт</li>
+                        <li>цена</li>
+                        <li>высокое качество работ</li>
+                        <li>мы всегда на связи</li>
+                        <li>различные способы оплаты</li>
+                        <li>договор</li>
+                   </ul>
+               </div>
+               <div class="col-md-12">
+                   <div class="block-get-pres">
+                       <a href="#" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/red_big_button2.png" alt=""></a>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="white-line"></div>
+  </section>
+  <div class="header-title">отзывы</div>
+  <section data-role="section" class="section-slider">
+    <div class="container">
+    <ul class="bxslider">
+      <li>
+        <div class="block-info-comm">
+          <div class="logo"><img src="img/logo-user2.png" alt=""></div>
+          <div class="info-comm">
+            <div class="name-comm">Александр</div>
+            <div class="name-company">интернет-бутик "Приятные сны"</div>
+          </div>
+          <div class="text-comm">
+            SMM-Эксперт большое спасибо, выполнили заказ на дизайн группы<br/> вконтакте быстро и качественно, учли все пожелания и помогли<br/> определиться. За неделю продажи в интернет-магазине выросли на<br/> 30 % :
+          </div>
+          <div class="read-comm"><a href="#">Читать дальше</a></div>
+        </div>
+
+        <div class="block-info-comm">
+          <div class="logo"><img src="img/logo-user1.png" alt=""></div>
+          <div class="info-comm">
+            <div class="name-comm">НАТАЛЬЯ</div>
+            <div class="name-company">директор Студии "JOY Art"</div>
+          </div>
+          <div class="text-comm">
+            Спасибо большое Марии и компании SMM-Эксперт, за время ее<br/> работы с моей группой численность выросла в 5 раз! Но это не<br/> самое главное - ее работа приносит нам много клиентов.<br/>
+            Маша - настоящий специалист по SMM! Рекомендую с ней работать.<br/>
+            http://vk.com/joy_studia
+          </div>
+          <div class="read-comm"><a href="#">Читать дальше</a></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="block-info-comm">
+          <div class="logo"><img src="img/logo-user4.png" alt=""></div>
+          <div class="info-comm">
+            <div class="name-comm">юлия</div>
+            <div class="name-company">Женский клуб "Южный берег"</div>
+          </div>
+          <div class="text-comm">
+            Здравствуйте! Хочу поблагодарить SMM-Эксперт за создание<br/> красивого меню в моей группе!:) И отдельно Марию за терпение,<br/> профессионализм, за рекомендации.Ребята сделали всё очень<br/> быстро, качественно, смотрю и любуюсь!:)
+          </div>
+          <div class="read-comm"><a href="#">Читать дальше</a></div>
+        </div>
+
+        <div class="block-info-comm">
+          <div class="logo"><img src="img/logo-user3.png" alt=""></div>
+          <div class="info-comm">
+            <div class="name-comm">лидия</div>
+            <div class="name-company">генеральный директор ООО "Оранжевый Галстук"</div>
+          </div>
+          <div class="text-comm">
+            Мой отзыв это не просто СПАСИБО. Мой отзыв для тех<br/> предпринимателей которые раздумывают о рекламе в контакте о её<br/> эффективности и прочее. <br/>
+            1. Меня заставило обратить внимание на интеренет рекламу ни<br/> кто иной как наше правительство, которое с января прошлого 2014 года...
+          <div class="read-comm"><a href="#">Читать дальше</a></div>
+        </div>
+      </li>
+
+      <li>
+        <div class="block-info-comm">
+          <div class="logo"><img src="img/logo-user4.png" alt=""></div>
+          <div class="info-comm">
+            <div class="name-comm">юлия</div>
+            <div class="name-company">Женский клуб "Южный берег"</div>
+          </div>
+          <div class="text-comm">
+            Здравствуйте! Хочу поблагодарить SMM-Эксперт за создание<br/> красивого меню в моей группе!:) И отдельно Марию за терпение,<br/> профессионализм, за рекомендации.Ребята сделали всё очень<br/> быстро, качественно, смотрю и любуюсь!:)
+          </div>
+          <div class="read-comm"><a href="#">Читать дальше</a></div>
+        </div>
+
+        <div class="block-info-comm">
+          <div class="logo"><img src="img/logo-user3.png" alt=""></div>
+          <div class="info-comm">
+            <div class="name-comm">лидия</div>
+            <div class="name-company">генеральный директор ООО "Оранжевый Галстук"</div>
+          </div>
+          <div class="text-comm">
+            Мой отзыв это не просто СПАСИБО. Мой отзыв для тех<br/> предпринимателей которые раздумывают о рекламе в контакте о её<br/> эффективности и прочее. <br/>
+            1. Меня заставило обратить внимание на интеренет рекламу ни<br/> кто иной как наше правительство, которое с января прошлого 2014 года...
+          <div class="read-comm"><a href="#">Читать дальше</a></div>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </section>
+  <div class="red-line"></div>
+  <section data-role="section" class="section-map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rh6Skm23BtdyDgvrYZYZwZs0nKqCAeS5&width=100%&height=540&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+    <div class="red-line"></div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="any-questions">остались вопросы?</div>
+        </div>
+        <div class="col-md-12 align-center">
+          <div class="call-me">Свяжитесь с нами по телефону или пишите нам в группу</div>
+          <div class="icon-vk"><img src="img/vk_v_kruge.png" alt=""></div>
+        </div>
+        <div class="col-md-12 align-center">
+          <div class="phone-text">8(911)767-94-10 <span class="small-or">или</span></div>
+          <div class="big-white-button">
+            <a href="#" data-toggle="modal" data-target="#myModal" href="#myModal"><img src="img/big_white_button.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-12 align-center copir">
+          <div>SMM в социальных сетях от фанатиков своего дела</div>
+          <div>ИНН 2902044722 ОГРН 1022900840753</div>
+          <div>® 2008-2017 г.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      mode: 'vertical',
+      slideMargin: 5,
+      minSlides: 2,
+      maxSlides: 2
+    });
+  });
+  </script>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Отправить заявку</h4>
+      </div>
+      <div class="modal-body">
+        <form id="form-send">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Ваш телефон" required>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button type="submit" class="btn btn-success" form="form-send">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
